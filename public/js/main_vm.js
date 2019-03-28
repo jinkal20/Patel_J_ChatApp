@@ -4,13 +4,12 @@ console.log('fixed');
 const socket = io();
 
 function setUserId({sID, message}){
-    debugger;
-    console.log('connected'. sID, message);
+    console.log('connected', sID, message);
     vm.socketID= sID;
 }
 
 function appendMessage(message){
-    vm.message.push(message);
+    vm.messages.push(message);
 }
 const vm = new Vue({
     data: {
